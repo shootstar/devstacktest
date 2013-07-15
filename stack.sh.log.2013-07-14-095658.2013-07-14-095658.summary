@@ -1,0 +1,20 @@
+stack.sh log stack.sh.log.2013-07-14-095658
+Installing package prerequisites
+Installing OpenStack project source
+Starting rsyslog
+Starting RabbitMQ
+Configuring and starting MySQL
+Starting Keystone
+Configuring and starting Horizon
+Configuring Glance
+Configuring Nova
+Configuring Cinder
+Configuring Nova
+Using libvirt virtualization driver
+Starting Glance
+Starting Nova API
+Starting Nova
+Starting Cinder
+Uploading images
+Configuring Tempest
+stack.sh completed in 735 seconds.

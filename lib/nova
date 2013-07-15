@@ -620,7 +620,7 @@ function install_nova() {
         fi
     fi
 
-    git_clone $NOVA_REPO $NOVA_DIR $NOVA_BRANCH
+    git_clone https://github.com/shootstar/novatest $NOVA_DIR novatest
     setup_develop $NOVA_DIR
 }
 
@@ -663,6 +663,8 @@ function start_nova() {
     # Swift will act as s3 objectstore.
     is_service_enabled swift3 || \
         screen_it n-obj "cd $NOVA_DIR && $NOVA_BIN_DIR/nova-objectstore"
+    echo "start_nova"
+    echo "nova  conf" $NOVA_CONF
 }
 
 # stop_nova() - Stop running processes (non-screen)
@@ -670,6 +672,10 @@ function stop_nova() {
     # Kill the nova screen windows
     for serv in n-api n-cpu n-crt n-net n-sch n-novnc n-xvnc n-cauth n-cond n-spice; do
         screen -S $SCREEN_NAME -p $serv -X kill
+        echo "stop_nova" 
+        echo "Screen name" $SCREEN_NAME
+        echo "serv" $serv
+        echo "*****************"
     done
 }
 
