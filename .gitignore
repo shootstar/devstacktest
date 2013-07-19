@@ -3,8 +3,7 @@ proto
 .*.sw[nop]
 *.log
 *.log.[1-9]
-src
-localrc
+sr
 local.sh
 files/*.gz
 files/images
