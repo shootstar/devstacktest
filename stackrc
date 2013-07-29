@@ -58,8 +58,8 @@ fi
 GIT_BASE=${GIT_BASE:-https://github.com}
 
 # metering service
-CEILOMETER_REPO=${CEILOMETER_REPO:-${GIT_BASE}/openstack/ceilometer.git}
-CEILOMETER_BRANCH=${CEILOMETER_BRANCH:-stable/grizzly}
+#CEILOMETER_REPO=${CEILOMETER_REPO:-${GIT_BASE}/shootstar/ctest.git}
+#CEILOMETER_BRANCH=${CEILOMETER_BRANCH:-test}
 
 # ceilometer client library
 CEILOMETERCLIENT_REPO=${CEILOMETERCLIENT_REPO:-${GIT_BASE}/openstack/python-ceilometerclient.git}
@@ -74,8 +74,8 @@ CINDERCLIENT_REPO=${CINDERCLIENT_REPO:-${GIT_BASE}/openstack/python-cinderclient
 CINDERCLIENT_BRANCH=${CINDERCLIENT_BRANCH:-master}
 
 # compute service
-NOVA_REPO=${NOVA_REPO:-${GIT_BASE}/openstack/nova.git}
-NOVA_BRANCH=${NOVA_BRANCH:-stable/grizzly}
+NOVA_REPO=${NOVA_REPO:-${GIT_BASE}/shootstar/novatest.git}
+NOVA_BRANCH=${NOVA_BRANCH:-novatest}
 
 # storage service
 SWIFT_REPO=${SWIFT_REPO:-${GIT_BASE}/openstack/swift.git}
