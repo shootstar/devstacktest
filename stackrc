@@ -58,8 +58,8 @@ fi
 GIT_BASE=${GIT_BASE:-https://github.com}
 
 # metering service
-#CEILOMETER_REPO=${CEILOMETER_REPO:-${GIT_BASE}/shootstar/ctest.git}
-#CEILOMETER_BRANCH=${CEILOMETER_BRANCH:-test}
+CEILOMETER_REPO=${CEILOMETER_REPO:-${GIT_BASE}/shootstar/ctest.git}
+CEILOMETER_BRANCH=${CEILOMETER_BRANCH:-test}
 
 # ceilometer client library
 CEILOMETERCLIENT_REPO=${CEILOMETERCLIENT_REPO:-${GIT_BASE}/openstack/python-ceilometerclient.git}
